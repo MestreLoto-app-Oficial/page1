@@ -1,843 +1,176 @@
+<html>
+<head>
 
-<!DOCTYPE html>
-<!-- saved from url=(0029)https://appmilionario.com/rc/ -->
-<html class="js-focus-visible" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="https://appmilionario.com/rc/uploads/pix-favicon.html">  
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<!-- CSS dependencies -->
-	<link rel="stylesheet" type="text/css" href="./Mestre Renda_files/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="./Mestre Renda_files/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./Mestre Renda_files/jquery.fancybox.min.css">
-	<link rel="stylesheet" type="text/css" href="./Mestre Renda_files/pix_style.css">
-	<link rel="stylesheet" type="text/css" href="./Mestre Renda_files/main.css">
-	<link rel="stylesheet" type="text/css" href="./Mestre Renda_files/font-style.css">
-	<link href="./Mestre Renda_files/animations.min.css" rel="stylesheet" type="text/css" media="all">
-	<!--[if IE]>
-	<link rel="stylesheet" type="text/css" href="css/ie-fix.css" />
-	<![endif]-->
-	<title>Mestre Renda</title>
-	<style type="text/css" id="pix_page_style"></style>
-<style type="text/css">
-@font-face {
-  font-weight: 400;
-  font-style:  normal;
-  font-family: 'Circular-Loom';
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-resizable=no">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2') format('woff2');
+
+  <style type="text/css">
+
+    .content-blockquote{border-left: 4px solid #C4170C;margin-top: calc(3% + .5vw);margin-bottom: calc(3% + .5vw);    font-size: 1.5rem !important;
+    text-align: left;
+    padding-left: 1rem;
+    line-height: 2rem;
+    font-weight: 600 !important;
+    letter-spacing: -.0625rem;}
+@media (min-width: 64rem){
+.content-blockquote {
+    font-size: 1.5rem !important  ;
+    line-height: 2.25rem;
+    padding-left: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  
+      font-weight: 500 !important;
+    
+}}
+
+
+
+
+    .btn-danger{
+      width: 90%;
+      font-weight: 500;
+      font-size: 1.2em;
+      margin-bottom:10px;
+      background-color: #FF1000;
+    }
+
+    .divs{
+        font-size: 1.2em;
+        color: #212529;
+        text-align: justify;
+      }
+
+    @media (max-width: 430px){
+      .divs{
+        width: 90% !important;
+      }
+
+    } 
+
+    .header {
+      padding: 5px 16px;
+      padding-bottom: 5px;
+      background-color: #20B9FF;
+      height: 10vh;
+      width: 100%
+        }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%
+    }
+
+    .sticky + .content {
+        padding-top: 102px;
+    }
+
+
+    
+
+    .btn-primary:hover{
+      background-color: #2E3138;
+      border: none !important;
+    }
+
+    .btn-primary:focus{
+      background-color: #2E3138;
+      border: none !important;
+      box-shadow: none !important;
+    }
+
+
+    .btn-primary{
+      background-color: #2E3138;
+      border: none;
+    }
+
+    .btn-primary:active{
+      background-color: #2E3138 !important;
+      border: none;
+      box-shadow: none !important;
+    }
+.jumbotron.vertical-center {
+  margin-bottom: 0; /* Remove the default bottom margin of .jumbotron */
 }
 
-@font-face {
-  font-weight: 500;
-  font-style:  normal;
-  font-family: 'Circular-Loom';
+.vertical-center {
+  min-height: 100%;  /* Fallback for vh unit */
+  min-height: 100vh; /* You might also want to use
+                        'height' property instead.
+                        
+                        Note that for percentage values of
+                        'height' or 'min-height' properties,
+                        the 'height' of the parent element
+                        should be specified explicitly.
+  
+                        In this case the parent of '.vertical-center'
+                        is the <body> element */
 
-  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2') format('woff2');
+  /* Make it a flex container */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; 
+  
+  /* Align the bootstrap's container vertically */
+    -webkit-box-align : center;
+  -webkit-align-items : center;
+       -moz-box-align : center;
+       -ms-flex-align : center;
+          align-items : center;
+  
+  /* In legacy web browsers such as Firefox 9
+     we need to specify the width of the flex container */
+  width: 100%;
+  
+  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+     hence the bootstrap's container won't be aligned to the center anymore.
+  
+     Therefore, we should use the following declarations to get it centered again */
+         -webkit-box-pack : center;
+            -moz-box-pack : center;
+            -ms-flex-pack : center;
+  -webkit-justify-content : center;
+          justify-content : center;
 }
+  </style>
 
-@font-face {
-  font-weight: 700;
-  font-style:  normal;
-  font-family: 'Circular-Loom';
-
-  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2') format('woff2');
-}
-
-@font-face {
-  font-weight: 900;
-  font-style:  normal;
-  font-family: 'Circular-Loom';
-
-  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
-}</style></head>
-<body><div class="pix_section pix-padding" id="section_content_5" style="display: block; background-size: cover; background-repeat: repeat-x; padding-top: 0px; padding-bottom: 0px; background-image: linear-gradient(rgb(254, 230, 0), rgb(254, 230, 0));" data-bg-img="linear-gradient( rgba(254,230,0,1) ,rgba(254,230,0,1))">
-  <div class="container">
-   <div class="row">
-    <div class="col-xs-12 col-sm-12 column ui-droppable col-md-1" style="display: block;">
-     <div class="pix-content text-center pix-margin-bottom-30" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-      
-     </div>
-    </div><div class="col-xs-12 col-sm-12 column ui-droppable col-md-10" style="display: block;">
-     <div class="pix-content text-center pix-margin-bottom-30" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-     </div>
-    </div><div class="col-xs-12 col-sm-12 column ui-droppable col-md-1" style="display: block;">
-     <div class="pix-content text-center pix-margin-bottom-30" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-      
-     </div>
-    </div>
-   </div>
-  </div>
- </div><div class="pix_section pix-padding-top-100 pix-showcase-1" id="section_intros_1" style="display: block; background-image: url(_https_/pixfort.com/items/1/images/showcas/bg-intro.html); background-color: rgb(0, 0, 0); background-size: cover; background-repeat: repeat-x; background-attachment: fixed; padding-top: 0px; padding-bottom: 0px;" data-bg-img="url(&quot;https://pixfort.com/items/1/images/showcas/bg-intro.jpg&quot;)">
-  <div class="container">
-   <div class="row">
-    <div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable" style="display: block;">
-     <div class="pix-content text-center pix-padding-top-40 pix-padding-bottom-30" style="background-repeat: repeat-x; padding: 10px 0px; margin: 0px; background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));" data-bg-img="linear-gradient( rgba(0,0,0,1) ,rgba(0,0,0,1))">
-      <h1 class="pix-white text-center pix-no-margin-top secondary-font" style="line-height: 0.9;">
-       <span class="pix_edit_text"><b><span style="font-size: 28px;">Ex-Bancário&nbsp;</span></b><b><span style="color: rgb(255, 190, 0); font-size: 28px;">Vaza Segredo Financeiro</span><span style="font-size: 28px;"> que Transforma Qualquer Celular em Uma </span><span style="color: rgb(255, 190, 0); font-size: 28px;">Em Uma Nova Fonte de Renda</span></b></span>
-      </h1>
-     </div>
-    </div>
-   </div>
-  </div>
- </div>
-<div class="pix_section gray-bg pix-padding" id="section_videos_1" style="display: block; background-color: rgb(0, 0, 0); background-repeat: repeat-x; padding-top: 0px; padding-bottom: 0px; background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));" data-bg-img="linear-gradient( rgba(0,0,0,1) ,rgba(0,0,0,1))">
-  <div class="container">
-   <div class="row">
-    <div class="col-xs-12 col-sm-10 column ui-droppable col-md-12">
-     <div class="pix-content"><div class="embed-responsive embed-responsive-16by9">
-      <iframe src="./Mestre Renda_files/518299194.html" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
-     </div></div>
-    </div>
-   </div>
-  </div>
- </div>
-<div class="pix_section pix-padding-v-85" id="section_call_to_action_1" style="display: block; background-color: rgb(0, 0, 0); background-repeat: repeat-x; padding-top: 20px; padding-bottom: 30px; background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));" data-bg-img="linear-gradient( rgba(0,0,0,1) ,rgba(0,0,0,1))">
-  <div class="container">
-   <div class="row">
-    <div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable">
-     <div class="pix-content text-center" style="background-repeat: repeat-x; padding: 0px; margin: 10px 0px 0px;">
-      <h4 class="pix-black-gray-dark text-center pix-no-margin-top secondary-font" style="color: white; line-height: 1.3">
-       <span class="pix_edit_text"><span style="font-size: 24px;">Clique No Play E Assista Este Vídeo
-</span><br><span><span style="font-size: 24px;">Antes Que Os “Poderosos” Tirem Do Ar.
-
-      </span></span></span></h4>
-      <a href="https://go.perfectpay.com.br/PPU38CK886U?" class="btn green-bg pix-white wide normal btn-round-lg" style="background-color: rgb(0, 200, 83);">
-       <span class="pix_edit_text"><span style="font-weight: 700; font-size: 28px;">EU TOPO PARTICIPAR</span></span>
-      </a>
-     </div>
-    </div>
-   </div>
-  </div>
- </div>
-<div class="pix_section pix-padding" id="section_titles_1" style="display: block; background-color: rgb(244, 244, 244); background-repeat: repeat-x; padding-top: 10px; padding-bottom: 10px;">
-  <div class="container">
-   <div class="row">
-    <div class="col-xs-12 col-sm-7 column ui-droppable col-md-12" style="display: block;">
-     <div class="pix-content">
-      <h1 class="pix-black-gray-dark pix-no-margin-top pix-sm-lineheight" style="text-align: center; color:#9D2113; line-height:0.8">
-       <span class="pix_edit_text"><span style="font-weight: bold; font-size: 28px;">Pessoas Comuns</span><span style="font-size: 28px;"> Estão Ganhando&nbsp;</span><span style="font-size: 28px;">Um </span><span style="font-weight: bold; font-size: 28px;">Novo Salário</span><span style="font-size: 28px;"> Extra Por Dia&nbsp;</span><span style="font-size: 28px;">Apertando </span><span style="font-weight: bold; font-size: 28px;">Poucos Botões no Celular</span><span><span style="font-weight: bold;"><br></span></span></span>
-      </h1>
-      <h5 class="pix-black-gray-light" style="text-align: center">
-       <span class="pix_edit_text"><span style="color: rgb(0, 0, 0);">Mestre de Obras Larga Trabalho Pesado com <span style="font-weight: bold;">Aplicativo da Renda!</span></span></span>
-      </h5>
-     </div>
-    </div>
-   </div>
-  </div>
- </div><div class="pix_section gray-bg pix-padding" id="section_videos_2" style="display: block; background-color: rgb(244, 244, 244); background-repeat: repeat-x; padding-top: 0px; padding-bottom: 10px;">
-  <div class="container">
-   <div class="row">
-    <div class="col-xs-12 col-sm-10 column ui-droppable col-md-12">
-     <div class="pix-content"><div class="embed-responsive embed-responsive-16by9">
-      <iframe src="./Mestre Renda_files/494670419.html" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
-     </div></div>
-    </div>
-   </div>
-  </div>
- </div>
-<div class="pix_section pix-padding-v-40" id="section_titles_2" style="display: block; background-color: rgb(244, 244, 244); background-repeat: repeat-x; padding-top: 10px; padding-bottom: 0px;">
-  <div class="container">
-   <div class="row">
-    <div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable">
-     <div class="pix-content pix-padding-bottom-30" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-      <h2 class="pix-black-gray-dark text-center pix-no-margin-top">
-       <span class="pix_edit_text"><span style="font-weight: bold; font-size: 20px; color: rgb(0, 0, 0);">Resultados Reais:</span></span>
-      </h2>
-     </div>
-    </div>
-   </div>
-  </div>
- </div><div class="pix_section pix-padding-v-30" id="section_sliders_1" style="display: block; background-color: rgb(244, 244, 244); background-repeat: repeat-x; padding-top: 0px; padding-bottom: 30px;">
- <div class="container">
-  <div class="row">
-   <div class="col-xs-12 col-sm-12 column ui-droppable col-md-2" style="display: block;">
-    <div class="pix-content"><div id="myCarousel_5" class="carousel slide pix-slider" data-ride="carousel" data-interval="false">
-<ol class="carousel-indicators">
-    <li data-target="#myCarousel_5" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel_5" data-slide-to="1"></li>
-    <li data-target="#myCarousel_5" data-slide-to="2"></li>
-    <li data-target="#myCarousel_5" data-slide-to="3"></li>
-  </ol>
-<div class="carousel-inner"><div class="carousel-inner item-600">
-<div class="item active">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font">#1</h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15"></div>
-      </div>
-    </div><div class="item">
-      <img src="./Mestre Renda_files/slider-placeholder.html" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font">#2</h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15"></div>
-      </div>
-    </div><div class="item">
-      <img src="./Mestre Renda_files/slider-placeholder.html" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font">#3</h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15"></div>
-      </div>
-    </div><div class="item">
-      <img src="./Mestre Renda_files/slider-placeholder.html" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font">#4</h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15"></div>
-      </div>
-    </div></div><a class="left carousel-control" href="https://appmilionario.com/rc/#myCarousel_5" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="right carousel-control" href="https://appmilionario.com/rc/#myCarousel_5" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Próximo</span>
-  </a>
-</div></div></div>
-   </div><div class="col-xs-12 col-sm-12 column ui-droppable col-md-8" style="display: block;">
-    <div class="pix-content" style="background-repeat: repeat-x; padding: 0px; margin: 0px;"><div id="myCarousel_0" class="carousel slide pix-slider" data-ride="carousel" data-interval="false">
-<ol class="carousel-indicators">
-    <li data-target="#myCarousel_0" data-slide-to="0" class=""></li>
-    <li data-target="#myCarousel_0" data-slide-to="1" class="active"></li>
-    <li data-target="#myCarousel_0" data-slide-to="2" class=""></li>
-    <li data-target="#myCarousel_0" data-slide-to="3" class=""></li>
-  </ol>
-<div class="carousel-inner"><div class="carousel-inner item-600">
-<div class="item">
-      <img src="./Mestre Renda_files/IMG-23-a3z.jpg" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15"></div>
-      </div>
-    </div><div class="item active">
-      <img src="./Mestre Renda_files/IMG-18-Hjr.jpg" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15"></div>
-      </div>
-    </div><div class="item">
-      <img src="./Mestre Renda_files/IMG-24-2P_.jpg" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15"></div>
-      </div>
-    </div><div class="item">
-      <img src="./Mestre Renda_files/IMG-17-f7G.jpg" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15"></div>
-      </div>
-    </div></div><a class="left carousel-control" href="https://appmilionario.com/rc/#myCarousel_0" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="right carousel-control" href="https://appmilionario.com/rc/#myCarousel_0" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Próximo</span>
-  </a>
-</div></div></div>
-   </div><div class="col-xs-12 col-sm-12 column ui-droppable col-md-2" style="display: block;">
-    <div class="pix-content"><div id="myCarousel_2" class="carousel slide pix-slider" data-ride="carousel" data-interval="false">
-<ol class="carousel-indicators">
-    <li data-target="#myCarousel_2" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel_2" data-slide-to="1"></li>
-    <li data-target="#myCarousel_2" data-slide-to="2"></li>
-    <li data-target="#myCarousel_2" data-slide-to="3"></li>
-  </ol>
-<div class="carousel-inner"><div class="carousel-inner item-600">
-<div class="item active">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font">#1</h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15"></div>
-      </div>
-    </div><div class="item">
-      <img src="./Mestre Renda_files/slider-placeholder.html" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font">#2</h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15"></div>
-      </div>
-    </div><div class="item">
-      <img src="./Mestre Renda_files/slider-placeholder.html" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font">#3</h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15"></div>
-      </div>
-    </div><div class="item">
-      <img src="./Mestre Renda_files/slider-placeholder.html" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font">#4</h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15"></div>
-      </div>
-    </div></div><a class="left carousel-control" href="https://appmilionario.com/rc/#myCarousel_2" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="right carousel-control" href="https://appmilionario.com/rc/#myCarousel_2" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Próximo</span>
-  </a>
-</div></div></div>
-   </div>
-  </div>
- </div>
+</head>
+<body>
+<div class="jumbotron vertical-center">
+<div class='container'>
+<p class="content-blockquote "> 
+“Acessando você terá o vídeo explicativo e comentários das pessoas que atingiram seus objetivos com o sistema inovador do Gabriel. Você também quer atingir resultados com esse App de renda extra?”  
+</p><center><a style='margin-right:15px' href='sim1.html' class='btn btn-success btn-lg'><b>SIM EU QUERO!</b></a><a href='nao1.html' class='btn btn-warning btn-lg'>Não</a>
+</center></div>
 </div>
-<div class="pix_section pix-padding-v-20" id="section_content_1" style="display: block; background-color: rgb(0, 0, 0); background-repeat: repeat-x; padding-top: 10px; padding-bottom: 10px;">
-  <div class="container">
-   <div class="row">
-    <div class="col-xs-12 col-sm-12 column ui-droppable col-md-3">
-     <div class="pix-content pix-padding-bottom-10 text-center" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-      <div class="pix-margin-v-10">
-      </div>
-     </div>
-    </div><div class="col-xs-12 col-sm-12 column ui-droppable col-md-2">
-     <div class="pix-content pix-padding-bottom-10 text-center" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-      <div class="pix-margin-v-10">
-      </div>
-     </div>
-    </div><div class="col-xs-12 col-sm-12 column ui-droppable col-md-2">
-     <div class="pix-content pix-padding-bottom-10 text-center" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-      <div class="pix-margin-v-10">
-       <img src="./Mestre Renda_files/telegram_PNG26-zPi.png" alt="" class="img-responsive pix-inline-block">
-      </div>
-     </div>
-    </div><div class="col-xs-12 col-sm-12 column ui-droppable col-md-2">
-     <div class="pix-content pix-padding-bottom-10 text-center" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-      <div class="pix-margin-v-10">
-      </div>
-     </div>
-    </div><div class="col-xs-12 col-sm-12 column ui-droppable col-md-3" style="display: block;">
-     <div class="pix-content pix-padding-bottom-10 text-center" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-      <div class="pix-margin-v-10">
-      </div>
-     </div>
-    </div><div class="col-xs-12 col-sm-12 column ui-droppable col-md-12">
-     <div class="pix-content pix-padding-bottom-10 text-center" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
 
-      <h1 class="pix-black-gray-dark text-center pix-no-margin-top pix-large-width-text pix-xm-lineheight">
-       <span class="pix_edit_text"><span style="font-size: 48px; font-weight: bold;"><g style="color:white"><span style="font-size: 36px;">O Que é o</span></g><span style="font-size: 36px;"> </span><span style="color: rgb(241, 190, 0); font-size: 36px;">Mestre Renda?</span></span></span>
-      </h1>
-      <p class="pix-black-gray-light big-text-20 text-center pix-large-width-text pix-no-margin-top" style="text-align: center; padding: 0.3em 0em 0em 0em; color:white">
-       <span class="pix_edit_text">O <span style="font-weight: bold;">Mestre Renda</span> foi feito para pessoas comuns, por isto ele tem <span style="font-weight: bold;">abordagem simples!</span><br><span>É um Grupo no Telegram, que é um app parecido com o WhatsApp, com mais funcionalidades.</span><br>É através dele que você vai gerar um <span style="font-weight: bold;">Novo Salário Extra Todos os Dias </span>apenas copiando as Mensagens que irei enviar no seu Celular.</span>
-      </p>
-     </div>
-    </div>
-   </div>
-  </div>
- </div><div class="pix_section gray-dark-bg pix-padding" id="section_call_to_action_2" style="display: block; background-color: rgb(0, 0, 0); background-repeat: repeat-x; padding-top: 0px; padding-bottom: 30px;">
-  <div class="container">
-   <div class="row">
-    <div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable">
-     <div class="pix-content text-center">
-      <a href="https://go.perfectpay.com.br/PPU38CK886U?" class="btn orange-bg pix-white normal btn-round-lg" style="background-color: rgb(0, 200, 83);">
-       <span class="pix_edit_text"><span style="font-weight: 700; font-size: 28px;">RECEBER NOVA RENDA</span></span>
-      </a>
-     </div>
-    </div>
-   </div>
-  </div>
- </div>
-<div class="pix_section pix-padding" id="section_titles_7" style="display: block; background-repeat: repeat-x; padding-top: 0px; padding-bottom: 0px; background-color: rgb(0, 0, 0);">
-  <div class="container">
-   <div class="row">
-    <div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable">
-     <div class="pix-content pix-padding-bottom-30" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-      <p class="pix-black-gray-light big-text text-center">
-       <span class="pix_edit_text">Acesso Anual Por Apenas R$ 167 (ou 12X R$16,77)
-<br><span><br></span></span>
-      </p>
-     </div>
-    </div>
-   </div>
-  </div>
- </div>
-<div class="pix_section pix-padding-v-30" id="section_titles_8" style="display: block; background-repeat: repeat-x; padding-top: 20px; padding-bottom: 0px;">
-  <div class="container">
-   <div class="row">
-    <div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable">
-     <div class="pix-content pix-padding-bottom-20 text-center" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-      <h1 class="pix-black-gray-dark text-center pix-no-margin-top secondary-font" style="line-height: 1">
-
-      <p></p>
-     </h1></div>
-    </div>
-   </div>
-  </div>
- </div>
-<div class="pix_section pix-padding-v-30 gray-bg" id="section_content_4" style="display: block; background-color: rgb(0, 0, 0); background-repeat: repeat-x; padding-top: 20px; padding-bottom: 0px;">
-  <div class="container">
-   <div class="row">
-    <div class="col-xs-12 col-sm-12 column ui-droppable col-md-12">
-     <div class="pix-content pix-padding-bottom-30" style="background-repeat: repeat-x; padding: 0px; margin: 1px 0px 0px;">
-      <h2 class="pix-black-gray-dark text-center pix-no-margin-top secondary-font" style="color:white; line-height:1.1">
-       <span class="pix_edit_text"><span style="font-weight: 700; font-size: 28px;">Com apenas R$16,77 por mês você pode começar a Ganhar ainda HOJE!</span></span>
-      </h2>
-     </div>
-    </div>
-    <div class="col-xs-12 col-sm-4 column ui-droppable col-md-1">
-     <div class="pix-content"><div class="pix-margin-v-10 text-center">
-     </div></div>
-    </div>
-    <div class="col-xs-12 col-sm-4 column ui-droppable col-md-10" style="display: block;">
-     <div class="pix-content"><div class="pix-margin-v-10 text-center">
-      <img src="./Mestre Renda_files/Design-sem-nome-6-ALu.png" alt="" class="img-responsive">
-     </div></div>
-    </div>
-    <div class="col-xs-12 col-sm-4 column ui-droppable col-md-1" style="display: block;">
-     <div class="pix-content"><div class="pix-margin-v-10 text-center">
-     </div></div>
-    </div>
-   </div>
-  </div>
- </div>
-<div class="pix_section pix-padding-v-75 gray-bg" id="section_call_to_action_3" style="display: block; background-color: rgb(0, 0, 0); background-repeat: repeat-x; padding-top: 0px; padding-bottom: 20px;">
-  <div class="container">
-   <div class="row">
-    <div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable">
-     <div class="pix-content text-center" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-      <div>
-       <a href="https://go.perfectpay.com.br/PPU38CK886U?" class="btn dark-green-bg small-text wide-2 pix-white pix-margin-right-10 wide pix-margin-top-10 normal btn-round-lg" style="background-color: rgb(0, 200, 83);">
-        <span class="pix_edit_text">
-         <strong><span style="font-size: 24px;">RECEBER NOVA RENDA</span></strong>
-        </span>
-       </a>
-      </div>
-     </div>
-    </div><div class="col-md-12 col-xs-12 text-center col-sm-12 column ui-droppable" style="display: block;">
-     <div class="pix-content" style="background-repeat: repeat-x; padding: 0px; margin: 10px 0px 0px;"><img src="./Mestre Renda_files/IMG-29-N5z.html" alt="" class="img-responsive pix-inline-block"></div>
-    </div><div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable" style="display: block;">
-     <div class="pix-content pix-padding-bottom-30" style="background-repeat: repeat-x; padding: 10px 0px 0px; margin: 0px;">
-      <p class="pix-black-gray-light big-text text-center">
-       <span class="pix_edit_text"><span style="font-weight: bold;">* Se você fizer as operações por 90 dias, me mandar as fotos provando que seguiu todos os sinais enviados e no mínimo não AUMENTAR o seu DINHEIRO INICIAL, eu te pago R$200,00 do meu bolso(!)</span></span>
-      </p>
-     </div>
-    </div>
-   </div>
-  </div>
- </div><div class="pix_section pix-padding-v-40" id="section_content_1" style="display: block; background-repeat: repeat-x; padding-top: 0px; padding-bottom: 0px; background-color: rgb(255, 255, 255);">
-  <div class="container">
-   <div class="row">
-    <div class="col-xs-12 col-sm-12 column ui-droppable col-md-3">
-     <div class="pix-content text-center" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-      <div class="pix-margin-v-10">
-      </div>
-     </div>
-    </div><div class="col-xs-12 col-sm-12 column ui-droppable col-md-6">
-     <div class="pix-content text-center" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-      <div class="pix-margin-v-10">
-       <img src="./Mestre Renda_files/garantia-7-dias-TNP.png" alt="" class="img-responsive pix-inline-block">
-      </div>
-     </div>
-    </div><div class="col-xs-12 col-sm-12 column ui-droppable col-md-3" style="display: block;">
-     <div class="pix-content text-center" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-      <div class="pix-margin-v-10">
-      </div>
-     </div>
-    </div>
-   </div>
-  </div>
- </div><div class="pix_section pix-padding-v-20" id="section_content_2" style="display: block; background-repeat: repeat-x; padding-top: 0px; padding-bottom: 20px; background-color: rgb(255, 255, 255);">
-  <div class="container">
-   <div class="row">
-    <div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable">
-     <div class="pix-content text-center">
-      <div class="pix-margin-bottom-20">
-      </div>
-      <h1 class="pix-black-gray-dark pix-no-margin-top" style="color: white; line-height:0.9">
-       <span class="pix_edit_text"><span style="font-weight: bold;"><span><span style="color: rgb(92, 184, 92); font-size: 36px; font-family: inherit;">TESTE POR 7 DIAS</span><br></span><span style="color: rgb(92, 184, 92); font-size: 36px;">E DEPOIS DECIDA SE IRÁ CONTINUAR</span></span></span>
-      </h1>
-      <h6 class="pix-black-gray-light pix-margin-bottom-20 pix-large-width-text pix-no-margin-top" style="color: black; line-height: 1.5; padding: 1em 0 0 0;">
-       <span class="pix_edit_text"><span style="font-size: 18px;">Após a sua inscrição, você terá 7 dias para experimentar o Mestre Renda, ou seja, se por algum motivo você não gostar ou achar que não é para você, é só mandar um e-mail&nbsp;para contato@mestredarenda.com solicitando o reembolso do seu investimento que faremos na hora, sem perguntas difíceis, é simples assim.&nbsp;</span><br><span><span style="font-size: 18px;">Se você não achar que é para você nós realmente não merecemos o seu investimento.</span></span></span>
-      </h6>
-      <a href="https://go.perfectpay.com.br/PPU38CK886U?" class="btn orange-bg small-text wide-2 pix-white pix-margin-right-10 wide pix-margin-top-10 normal btn-round-lg" style="background-color: rgb(0, 200, 83);">
-       <span class="pix_edit_text"><b><span style="font-size: 24px;">TESTAR POR 7 DIAS</span></b></span>
-      </a>
-     </div>
-    </div><div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable" style="display: block;">
-     <div class="pix-content pix-padding-bottom-30" style="background-repeat: repeat-x; padding: 30px 0px 0px; margin: 0px;">
-      <p class="pix-black-gray-light big-text text-center">
-       <span class="pix_edit_text"><span style="font-size: 24px;">Seja Rápido! As Licenças Podem Terminar a Qualquer Instante!</span></span>
-      </p>
-     </div>
-    </div>
-   </div>
-  </div>
- </div><div class="pix_section pix-padding-v-40" id="section_titles_5" style="display: block; background-repeat: repeat-x; padding-top: 20px; padding-bottom: 0px; background-color: rgb(0, 0, 0);">
-  <div class="container">
-   <div class="row">
-    <div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable">
-     <div class="pix-content pix-padding-bottom-30 text-center" style="background-repeat: repeat-x; padding: 0px 0px 20px; margin: 0px;">
-      <h1 class="pix-black-gray-dark text-center pix-no-margin-top secondary-font" style="line-height: 1.1">
-       <span class="pix_edit_text"><span style="color: rgb(255, 255, 255); font-weight: 700; font-size: 36px;">Como eu sei que VOCÊ pode obter RESULTADOS?</span></span>
-      </h1>
-     </div>
-    </div>
-   </div>
-  </div>
- </div>
-<div class="pix_section pix-padding-v-30" id="section_sliders_2" style="display: block; background-repeat: repeat-x; padding-top: 0px; padding-bottom: 20px; background-color: rgb(0, 0, 0);">
- <div class="container">
-  <div class="row">
-   <div class="col-xs-12 col-sm-12 column ui-droppable col-md-2" style="display: block;">
-    <div class="pix-content"><div id="myCarousel_1" class="carousel slide pix-slider" data-ride="carousel" data-interval="false">
-<ol class="carousel-indicators">
-    <li data-target="#myCarousel_1" data-slide-to="0" class=""></li>
-    <li data-target="#myCarousel_1" data-slide-to="1" class=""></li>
-    <li data-target="#myCarousel_1" data-slide-to="2" class=""></li>
-    <li data-target="#myCarousel_1" data-slide-to="3" class="active"></li>
-  </ol>
-<div class="carousel-inner"><div class="carousel-inner item-600">
-<div class="item">
-      <img src="./Mestre Renda_files/IMG-1-PX5.jpg" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15">
-        </div>
-      </div>
-    </div><div class="item">
-      <img src="./Mestre Renda_files/IMG-22-j6p.jpg" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15">
-        </div>
-      </div>
-    </div><div class="item">
-      <img src="./Mestre Renda_files/IMG-27-nOm.jpeg" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15">
-        </div>
-      </div>
-    </div><div class="item active">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15"></div>
-      </div>
-    </div></div><a class="left carousel-control" href="https://appmilionario.com/rc/#myCarousel_1" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="right carousel-control" href="https://appmilionario.com/rc/#myCarousel_1" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Próximo</span>
-  </a>
-</div></div></div>
-   </div><div class="col-xs-12 col-sm-12 column ui-droppable col-md-8">
-    <div class="pix-content"><div id="myCarousel_3" class="carousel slide pix-slider" data-ride="carousel" data-interval="false">
-<ol class="carousel-indicators">
-    <li data-target="#myCarousel_3" data-slide-to="0" class=""></li>
-    <li data-target="#myCarousel_3" data-slide-to="1" class=""></li>
-    <li data-target="#myCarousel_3" data-slide-to="2" class=""></li>
-    <li data-target="#myCarousel_3" data-slide-to="3" class="active"></li>
-  </ol>
-<div class="carousel-inner"><div class="carousel-inner item-600">
-<div class="item">
-      <img src="./Mestre Renda_files/IMG-1-PX5.jpg" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15">
-        </div>
-      </div>
-    </div><div class="item">
-      <img src="./Mestre Renda_files/IMG-22-j6p.jpg" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15">
-        </div>
-      </div>
-    </div><div class="item">
-      <img src="./Mestre Renda_files/IMG-27-nOm.jpeg" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15">
-        </div>
-      </div>
-    </div><div class="item active">
-      <img src="./Mestre Renda_files/IMG-26-cMa.jpg" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15"></div>
-      </div>
-    </div></div><a class="left carousel-control" href="https://appmilionario.com/rc/#myCarousel_3" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="right carousel-control" href="https://appmilionario.com/rc/#myCarousel_3" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Próximo</span>
-  </a>
-</div></div></div>
-   </div><div class="col-xs-12 col-sm-12 column ui-droppable col-md-2">
-    <div class="pix-content"><div id="myCarousel_6" class="carousel slide pix-slider" data-ride="carousel" data-interval="false">
-<ol class="carousel-indicators">
-    <li data-target="#myCarousel_6" data-slide-to="0" class=""></li>
-    <li data-target="#myCarousel_6" data-slide-to="1" class=""></li>
-    <li data-target="#myCarousel_6" data-slide-to="2" class=""></li>
-    <li data-target="#myCarousel_6" data-slide-to="3" class="active"></li>
-  </ol>
-<div class="carousel-inner"><div class="carousel-inner item-600">
-<div class="item">
-      <img src="./Mestre Renda_files/IMG-1-PX5.jpg" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15">
-        </div>
-      </div>
-    </div><div class="item">
-      <img src="./Mestre Renda_files/IMG-22-j6p.jpg" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15">
-        </div>
-      </div>
-    </div><div class="item">
-      <img src="./Mestre Renda_files/IMG-27-nOm.jpeg" alt="Chania">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15">
-        </div>
-      </div>
-    </div><div class="item active">
-      <div class="carousel-caption">
-        <h2 class="carousel-title secondary-font"></h2>
-        <h5 class="carousel-text secondary-font"></h5>
-        <div class="pix-slider-btn pix-padding-top-15"></div>
-      </div>
-    </div></div><a class="left carousel-control" href="https://appmilionario.com/rc/#myCarousel_6" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="right carousel-control" href="https://appmilionario.com/rc/#myCarousel_6" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Próximo</span>
-  </a>
-</div></div></div>
-   </div>
-  </div>
- </div>
-</div>
-<div class="pix_section pix-padding-v-40" id="section_titles_6" style="display: block; background-color: rgb(0, 0, 0); background-repeat: repeat-x; padding-top: 20px; padding-bottom: 20px;">
-  <div class="container">
-   <div class="row">
-    <div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable">
-     <div class="pix-content pix-padding-bottom-30 text-center" style="background-repeat: repeat-x; padding: 0px; margin: 0px;">
-      <h5 class="pix-black-gray-light pix-large-width-text pix-no-margin-top">
-       <span class="pix_edit_text"><font color="#ffffff">Meu nome é Gabriel dos Santos, sou formado em Princeton e trabalhei por 10 anos em Grandes Bancos, hoje ajudo <span style="font-weight: bold;">QUALQUER PESSOA</span> através dos meus conhecimentos em Finanças a <span style="font-weight: bold;">Gerar um Novo Salário Extra em Sua Vida em poucos minutos usando apenas o seu próprio celular.</span></font><span><font color="#ffffff"><b><br></b></font></span></span>
-      </h5>
-     </div>
-    </div><div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable" style="display: block;">
-     <div class="pix-content text-center" style="background-repeat: repeat-x; padding: 0px; margin: 0px 0px 20px;">
-      <div>
-       <a href="https://go.perfectpay.com.br/PPU38CK886U?" class="btn dark-green-bg small-text wide-2 pix-white pix-margin-right-10 wide pix-margin-top-10 normal btn-round-lg" style="background-color: rgb(0, 200, 83);">
-        <span class="pix_edit_text">
-         <strong><span style="font-size: 24px;">RECEBER NOVA RENDA</span></strong>
-        </span>
-       </a>
-      </div>
-     </div>
-    </div><div class="col-md-12 col-xs-12 text-center col-sm-12 column ui-droppable" style="display: block;">
-     <div class="pix-content" style="background-repeat: repeat-x; padding: 0px; margin: 10px 0px 0px;"><img src="./Mestre Renda_files/IMG-29-N5z.html" alt="" class="img-responsive pix-inline-block"></div>
-    </div><div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable" style="display: block;">
-     <div class="pix-content pix-padding-bottom-30" style="background-repeat: repeat-x; padding: 20px 0px; margin: 0px;">
-      <p class="pix-black-gray-light big-text text-center">
-       <span class="pix_edit_text"><span style="font-size: 24px;">Acesso Anual Por Apenas R$ 167 (ou 12X R$16,77)</span></span>
-      </p>
-     </div>
-    </div>
-   </div>
-  </div>
- </div>
-<div class="pix_section pix-padding-v-85" id="section_accordions_1" style="display: block; background-repeat: repeat-x; padding-top: 10px; padding-bottom: 10px;">
-  <div class="container">
-   <div class="row">
-    <div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable">
-     <div class="pix-content text-center">
-      <div>
-       <h2 class="pix-black-gray-dark secondary-font pix-small-width-text">
-        <span class="pix_edit_text"><span style="font-weight: bold; color: rgb(60, 166, 17); font-size: 48px;">Perguntas Frequentes</span></span>
-       </h2>
-      </div>
-     </div>
-    </div>
-    <div class="col-md-2 col-xs-12 col-sm-2 column ui-droppable">
-    </div>
-    <div class="col-md-8 col-xs-12 col-sm-8 column ui-droppable">
-     <div class="pix-content pix-margin-v-50 text-left" style="background-repeat: repeat-x; padding: 0px; margin: 20px 0px;">
-      <div class="pix_accordion panel-group ui-sortable" id="accordion">  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="https://appmilionario.com/rc/#c_1_accordion" class="collapsed">Como funciona a garantia dos R$200,00?</a>
-      </h4>
-    </div>
-    <div id="c_1_accordion" class="panel-collapse collapse" style="height: 0px;">
-      <div class="panel-body">São 2 cenários:
-<br>
-<b>CENÁRIO 1:</b>
-<br>
-#1 – Você faz a sua inscrição no Mestre Renda e tem acesso imediato ao aplicativo;
-<br><br>
-#2 – Se por algum motivo você achar que o Mestre Renda não é para você, não tem problema, basta mandar um e-mail para nosso suporte (contato@mestredarenda.com) pedindo o seu dinheiro de volta em até 7 dias após a inscrição que lhe devolveremos todos os centavos, sem letra miúda… SIMPLES ASSIM 🙂
-<br>
-<br>
-<b>CENÁRIO 2</b>
-<br>
-Agora, sobre os R$200,00:
-<br>
-#1 – Você faz sua inscrição no Mestre Renda, e coloca em prática por 90 dias.
-<br>
-<br>
-#2 – Se você seguir Todos os Sinais enviados e no mínimo não AUMENTAR o seu Investimento Inicial, é só mandar um e-mail para o suporte (contato@mestredarenda.com) com todas as fotos das operações (você deverá mandar todas as fotos para comprovar que seguiu todos os sinais religiosamente)</div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="https://appmilionario.com/rc/#c_2_accordion" class="collapsed">Quantos dias eu tenho para experimentar o Mestre Renda?</a>
-      </h4>
-    </div>
-    <div id="c_2_accordion" class="panel-collapse collapse" style="height: 0px;">
-      <div class="panel-body">O período para você experimentar e já começar a lucrar imediatamente é de 7 dias a contar após sua inscrição.</div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="https://appmilionario.com/rc/#c_3_accordion" class="collapsed">Como faço para solicitar o reembolso?</a>
-      </h4>
-    </div>
-    <div id="c_3_accordion" class="panel-collapse collapse" style="height: 0px;">
-      <div class="panel-body">Você deverá mandar um email para contato@mestredarenda.com solicitando o reembolso dentro do prazo de 7 dias após inscrição.</div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="https://appmilionario.com/rc/#c_4_accordion" class="collapsed">O pagamento é seguro?</a>
-      </h4>
-    </div>
-    <div id="c_4_accordion" class="panel-collapse collapse" style="height: 0px;">
-      <div class="panel-body">O pagamento é 100% seguro e processado pela maior empresa de infoprodutos do Brasil</div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="https://appmilionario.com/rc/#c_5_accordion" class="collapsed">Como vou ter acesso ao Mestre Renda?</a>
-      </h4>
-    </div>
-    <div id="c_5_accordion" class="panel-collapse collapse" style="height: 0px;">
-      <div class="panel-body">Na sua caixa de e-mail, simples, rápido e fácil. Após a plataforma reconhecer o pagamento nós enviaremos todas as informações para o seu e-mail.</div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="https://appmilionario.com/rc/#c_6_accordion" class="collapsed">Qual é o tempo de acesso ao Grupo Mestre Renda?</a>
-      </h4>
-    </div>
-    <div id="c_6_accordion" class="panel-collapse collapse" style="height: 0px;">
-      <div class="panel-body">Você terá acesso a um plano de assinatura anual por apenas R$ 167,00 ou 12x de R$16,77. Após 1 ano você decide se renova a assinatura.</div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="https://appmilionario.com/rc/#c_7_accordion" class="collapsed">O que eu preciso para começar a ganhar dinheiro imediato?</a>
-      </h4>
-    </div>
-    <div id="c_7_accordion" class="panel-collapse collapse" style="height: 0px;">
-      <div class="panel-body">A única coisa que você precisa é do seu próprio celular e saber como copiar e colar nossos sinais Gerados pelo Aplicativo e isso nós ensinamos em poucas vídeo aulas rápidas e detalhadas.</div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="https://appmilionario.com/rc/#c_8_accordion" class="collapsed">Quanto dinheiro eu preciso para começar?</a>
-      </h4>
-    </div>
-    <div id="c_8_accordion" class="panel-collapse collapse" style="height: 0px;">
-      <div class="panel-body">Com R$ 50,00 já é possível iniciar. O objetivo desta estratégia financeira é transformar centavos em reais. E não o contrário.</div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="https://appmilionario.com/rc/#c_9_accordion" class="">Quais os meio de pagamentos que são aceitos?</a>
-      </h4>
-    </div>
-    <div id="c_9_accordion" class="panel-collapse in" style="height: auto;">
-      <div class="panel-body">Cartão de Crédito e Boleto Bancário</div>
-    </div>
-  </div>
-</div>
-     </div>
-    </div>
-   </div>
-  </div>
- </div>
-<div class="pix_section pix-padding-v-40" id="section_titles_4" style="display: block; background-color: rgb(0, 0, 0); background-repeat: repeat-x; padding-top: 10px; padding-bottom: 10px;">
-  <div class="container">
-   <div class="row">
-    <div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable">
-     <div class="pix-content pix-padding-bottom-30 text-center" style="background-repeat: repeat-x; padding: 10px 0px; margin: 0px;">
-      <h5 class="pix-black-gray-light pix-md-width-text pix-no-margin-top">
-       <span class="pix_edit_text"><span><span style="font-weight: 700; color: rgb(254, 254, 254);">contato@mestredarenda.com
-</span></span><br><span><span style="font-weight: 700;">
-</span></span><span style="font-weight: 700;"><br>AVISO LEGAL: Não existem garantias no Mercado de Renda Variável, nem Ganhos Fixos. Os resultados podem variar de pessoa para pessoa.</span></span>
-      </h5>
-     </div>
-    </div>
-   </div>
-  </div>
- </div>
-
-<!-- Javascript -->
-<script src="./Mestre Renda_files/jquery-1.11.2.js.download"></script>
-<script src="./Mestre Renda_files/jquery-ui.js.download"></script>
-<script src="./Mestre Renda_files/bootstrap.js.download"></script>
-<script src="./Mestre Renda_files/velocity.min.js.download"></script>
-<script src="./Mestre Renda_files/velocity.ui.min.js.download"></script>
-<script src="./Mestre Renda_files/appear.min.js.download" type="text/javascript"></script>
-<script src="./Mestre Renda_files/animations.js.download" type="text/javascript"></script>
-<script src="./Mestre Renda_files/plugins.js.download" type="text/javascript"></script>
-<script src="./Mestre Renda_files/jquery.fancybox.min.js.download" type="text/javascript"></script>
-<script src="./Mestre Renda_files/custom.js.download"></script>
-
-<script src="./Mestre Renda_files/jquery.min.js.download"></script>
+ <!-- Global site tag (gtag.js) - Google Ads: 395066277 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-395066277"></script>
 <script>
-    (function ($) {
-        $('a').each(function () {
-            let href = $(this).attr("href");
-            if (href === undefined || href.indexOf("#") >= 0 || href.indexOf("api.whatsapp") >= 0) return true;
-            // if (href.indexOf("qqrmerda") == -1) return true;
-            let search_params = document.location.search.replace('?', '');
-            let urlFinal = href + (href.indexOf("?") > 0 ? '&' : '?') + search_params.toString();
-            $(this).attr("href", urlFinal);
-        });
-    })(jQuery);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-395066277');
+</script>
+  
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QFKHEVP0JL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QFKHEVP0JL');
 </script>
 
 
-
-</body><loom-container id="lo-engage-ext-container"><div></div><loom-shadow classname="resolved"></loom-shadow></loom-container></html>
+</body>
+</html>
